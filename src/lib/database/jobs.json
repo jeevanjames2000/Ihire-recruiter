@@ -1,0 +1,1513 @@
+{
+"software-engineering": [
+    {
+      "id": 1,
+      "title": "Principal Designer",
+      "company": "Twilio",
+      "companyId": "twilio",
+      "logo": "https://logo.clearbit.com/twilio.com",
+      "location": "Cupertino, CA",
+      "salary": "$160k - $210k",
+      "type": "Part-time",
+      "category": "software-engineering",
+      "description": "Lead the design of user-centric interfaces for Twilio's communication platforms, ensuring seamless user experiences across web and mobile applications.",
+      "responsibilities": [
+        "Conduct user interviews and usability testing to inform design decisions",
+        "Lead a team of designers to create intuitive and visually appealing interfaces",
+        "Collaborate with product managers and engineers to align designs with technical requirements",
+        "Develop and maintain design systems to ensure consistency across products"
+      ],
+      "requirements": [
+        "5+ years of experience in UI/UX design for software products",
+        "Proficiency in design tools like Figma, Sketch, or Adobe XD",
+        "Strong portfolio showcasing user-centered design solutions",
+        "Excellent communication and leadership skills"
+      ],
+      "companyDescription": "Twilio powers the future of business communications, enabling phones, VoIP, and messaging to be embedded into web, desktop, and mobile software.",
+      "companyAbout": "Founded in 2008, Twilio is a cloud communications platform that helps businesses build and scale customer engagement solutions. We value innovation, collaboration, and customer success.",
+      "companyBanner": "https://placehold.co/1200x200?text=Twilio+Banner",
+      "companyLocation": "San Francisco, CA",
+      "companyWebsite": "https://www.twilio.com"
+    },
+    {
+      "id": 2,
+      "title": "Senior Software Engineer",
+      "company": "Microsoft",
+      "companyId": "microsoft",
+      "logo": "https://logo.clearbit.com/microsoft.com",
+      "location": "Seattle, WA",
+      "salary": "$100k - $140k",
+      "type": "Full-time",
+      "category": "software-engineering",
+      "description": "Build and optimize scalable web applications for Microsoft's cloud services, leveraging modern technologies like Azure, .NET, and React.",
+      "responsibilities": [
+        "Develop high-quality, scalable software solutions for cloud-based applications",
+        "Collaborate with cross-functional teams to define and implement new features",
+        "Optimize application performance and ensure code quality through testing",
+        "Mentor junior engineers and contribute to technical strategy"
+      ],
+      "requirements": [
+        "5+ years of experience in software development",
+        "Expertise in C#, JavaScript, or similar languages",
+        "Experience with cloud platforms like Azure or AWS",
+        "Strong problem-solving and communication skills"
+      ],
+      "companyDescription": "Microsoft is a global leader in software, cloud, and AI solutions, empowering businesses and individuals worldwide.",
+      "companyAbout": "Since 1975, Microsoft has been at the forefront of technology, delivering innovative products like Windows, Office, and Azure. Join us to shape the future of tech.",
+      "companyBanner": "https://placehold.co/1200x200?text=Microsoft+Banner",
+      "companyLocation": "Redmond, WA",
+      "companyWebsite": "https://www.microsoft.com"
+    },
+    {
+      "id": 3,
+      "title": "Junior Software Engineer",
+      "company": "Netflix",
+      "companyId": "netflix",
+      "logo": "https://logo.clearbit.com/netflix.com",
+      "location": "Toronto, Canada",
+      "salary": "$150k - $200k",
+      "type": "Full-time",
+      "category": "software-engineering",
+      "description": "Contribute to the development of Netflix's streaming platform, focusing on backend services and content delivery systems.",
+      "responsibilities": [
+        "Write clean, maintainable code for backend services",
+        "Collaborate with senior engineers to implement new features",
+        "Participate in code reviews and adhere to best practices",
+        "Assist in troubleshooting and resolving technical issues"
+      ],
+      "requirements": [
+        "1-3 years of experience in software development",
+        "Proficiency in Python or Java",
+        "Familiarity with microservices architecture",
+        "Eagerness to learn and grow in a fast-paced environment"
+      ],
+      "companyDescription": "Netflix is the world's leading streaming entertainment service, delivering movies and TV shows to millions globally.",
+      "companyAbout": "Founded in 1997, Netflix has revolutionized entertainment with a focus on innovation and creativity. Join us to entertain the world.",
+      "companyBanner": "https://placehold.co/1200x200?text=Netflix+Banner",
+      "companyLocation": "Los Gatos, CA",
+      "companyWebsite": "https://www.netflix.com"
+    },
+    {
+      "id": 4,
+      "title": "Principal Software Engineer",
+      "company": "NVIDIA",
+      "companyId": "nvidia",
+      "logo": "https://logo.clearbit.com/nvidia.com",
+      "location": "London, UK",
+      "salary": "$80k - $110k",
+      "type": "Full-time",
+      "category": "software-engineering",
+      "description": "Lead the development of software solutions for NVIDIA's AI and graphics platforms, driving innovation in GPU-based applications.",
+      "responsibilities": [
+        "Architect and develop scalable software for AI and graphics applications",
+        "Lead technical initiatives and guide cross-functional teams",
+        "Optimize algorithms for GPU performance",
+        "Stay updated with the latest advancements in AI and graphics technology"
+      ],
+      "requirements": [
+        "7+ years of experience in software engineering",
+        "Expertise in C++, CUDA, or Python",
+        "Experience with GPU programming and AI frameworks",
+        "Strong leadership and problem-solving skills"
+      ],
+      "companyDescription": "NVIDIA is a global leader in AI, graphics, and accelerated computing, powering innovation across industries.",
+      "companyAbout": "Since 1993, NVIDIA has been pioneering GPU technology for gaming, AI, and autonomous vehicles. Join us to accelerate human discovery.",
+      "companyBanner": "https://placehold.co/1200x200?text=NVIDIA+Banner",
+      "companyLocation": "Santa Clara, CA",
+      "companyWebsite": "https://www.nvidia.com"
+    },
+    {
+      "id": 5,
+      "title": "Senior Data Analyst",
+      "company": "Microsoft",
+      "companyId": "microsoft",
+      "logo": "https://logo.clearbit.com/microsoft.com",
+      "location": "Los Angeles, CA",
+      "salary": "$150k - $200k",
+      "type": "Full-time",
+      "category": "software-engineering",
+      "description": "Analyze large datasets to provide actionable insights for Microsoft's business intelligence tools and cloud services.",
+      "responsibilities": [
+        "Analyze and interpret complex datasets to drive business decisions",
+        "Develop dashboards and reports using Power BI",
+        "Collaborate with product teams to define data requirements",
+        "Ensure data accuracy and integrity in reporting"
+      ],
+      "requirements": [
+        "4+ years of experience in data analysis",
+        "Proficiency in SQL, Python, and Power BI",
+        "Strong analytical and problem-solving skills",
+        "Experience with cloud-based data platforms"
+      ],
+      "companyDescription": "Microsoft is a global leader in software, cloud, and AI solutions, empowering businesses and individuals worldwide.",
+      "companyAbout": "Since 1975, Microsoft has been at the forefront of technology, delivering innovative products like Windows, Office, and Azure. Join us to shape the future of tech.",
+      "companyBanner": "https://placehold.co/1200x200?text=Microsoft+Banner",
+      "companyLocation": "Redmond, WA",
+      "companyWebsite": "https://www.microsoft.com"
+    },
+    {
+      "id": 6,
+      "title": "Principal Data Analyst",
+      "company": "Cisco",
+      "companyId": "cisco",
+      "logo": "https://logo.clearbit.com/cisco.com",
+      "location": "San Francisco, CA",
+      "salary": "$120k - $160k",
+      "type": "Full-time",
+      "category": "software-engineering",
+      "description": "Lead data analytics initiatives to optimize Cisco's networking and security solutions, providing insights to enhance product performance.",
+      "responsibilities": [
+        "Lead data analysis projects to support product development",
+        "Develop predictive models to enhance network performance",
+        "Collaborate with engineering teams to integrate analytics into products",
+        "Present findings to stakeholders to drive strategic decisions"
+      ],
+      "requirements": [
+        "6+ years of experience in data analytics",
+        "Expertise in SQL, R, or Python",
+        "Experience with network data analysis is a plus",
+        "Strong communication and leadership skills"
+      ],
+      "companyDescription": "Cisco is a global leader in networking, cybersecurity, and collaboration technologies.",
+      "companyAbout": "Founded in 1984, Cisco connects people, devices, and networks securely. We empower our employees to innovate and make an impact.",
+      "companyBanner": "https://placehold.co/1200x200?text=Cisco+Banner",
+      "companyLocation": "San Jose, CA",
+      "companyWebsite": "https://www.cisco.com"
+    },
+    {
+      "id": 7,
+      "title": "Principal Growth Specialist",
+      "company": "NVIDIA",
+      "companyId": "nvidia",
+      "logo": "https://logo.clearbit.com/nvidia.com",
+      "location": "Austin, TX",
+      "salary": "$100k - $140k",
+      "type": "Contract",
+      "category": "software-engineering",
+      "description": "Drive user acquisition and engagement for NVIDIA's AI and gaming platforms through innovative growth strategies.",
+      "responsibilities": [
+        "Develop and execute growth strategies to increase user adoption",
+        "Analyze user behavior to optimize marketing campaigns",
+        "Collaborate with product teams to enhance user experience",
+        "Monitor and report on growth metrics"
+      ],
+      "requirements": [
+        "5+ years of experience in growth marketing or user acquisition",
+        "Expertise in analytics tools like Google Analytics or Mixpanel",
+        "Strong understanding of digital marketing channels",
+        "Ability to work independently and in a team"
+      ],
+      "companyDescription": "NVIDIA is a global leader in AI, graphics, and accelerated computing, powering innovation across industries.",
+      "companyAbout": "Since 1993, NVIDIA has been pioneering GPU technology for gaming, AI, and autonomous vehicles. Join us to accelerate human discovery.",
+      "companyBanner": "https://placehold.co/1200x200?text=NVIDIA+Banner",
+      "companyLocation": "Santa Clara, CA",
+      "companyWebsite": "https://www.nvidia.com"
+    },
+    {
+      "id": 8,
+      "title": "Senior UI Designer",
+      "company": "Adobe",
+      "companyId": "adobe",
+      "logo": "https://logo.clearbit.com/adobe.com",
+      "location": "London, UK",
+      "salary": "$120k - $160k",
+      "type": "Contract",
+      "category": "software-engineering",
+      "description": "Design engaging and intuitive user interfaces for Adobe's creative software suite, enhancing user productivity and experience.",
+      "responsibilities": [
+        "Create wireframes, prototypes, and final designs for software interfaces",
+        "Conduct user research to inform design decisions",
+        "Collaborate with developers to ensure design fidelity",
+        "Contribute to Adobe's design system evolution"
+      ],
+      "requirements": [
+        "4+ years of experience in UI design",
+        "Proficiency in Adobe XD, Figma, or similar tools",
+        "Strong portfolio showcasing creative design work",
+        "Excellent collaboration and communication skills"
+      ],
+      "companyDescription": "Adobe empowers everyone to create and deliver exceptional digital experiences.",
+      "companyAbout": "Founded in 1982, Adobe is a leader in creative software, digital marketing, and document solutions. Join us to inspire creativity worldwide.",
+      "companyBanner": "https://placehold.co/1200x200?text=Adobe+Banner",
+      "companyLocation": "San Jose, CA",
+      "companyWebsite": "https://www.adobe.com"
+    },
+    {
+      "id": 9,
+      "title": "Principal Product Designer",
+      "company": "Etsy",
+      "companyId": "etsy",
+      "logo": "https://logo.clearbit.com/etsy.com",
+      "location": "Cupertino, CA",
+      "salary": "$160k - $210k",
+      "type": "Contract",
+      "category": "software-engineering",
+      "description": "Lead the design of Etsy's e-commerce platform, creating intuitive experiences for buyers and sellers.",
+      "responsibilities": [
+        "Design user flows and interfaces for Etsy's marketplace",
+        "Conduct user testing to validate design decisions",
+        "Collaborate with product and engineering teams to deliver features",
+        "Mentor junior designers and maintain design consistency"
+      ],
+      "requirements": [
+        "6+ years of experience in product design",
+        "Expertise in Figma and user research methodologies",
+        "Experience with e-commerce platforms is a plus",
+        "Strong leadership and communication skills"
+      ],
+      "companyDescription": "Etsy is a global marketplace for unique and creative goods, connecting buyers and sellers worldwide.",
+      "companyAbout": "Since 2005, Etsy has empowered creative entrepreneurs and fostered a vibrant community. Join us to support small businesses globally.",
+      "companyBanner": "https://placehold.co/1200x200?text=Etsy+Banner",
+      "companyLocation": "Brooklyn, NY",
+      "companyWebsite": "https://www.etsy.com"
+    },
+    {
+      "id": 10,
+      "title": "Principal UX Designer",
+      "company": "Microsoft",
+      "companyId": "microsoft",
+      "logo": "https://logo.clearbit.com/microsoft.com",
+      "location": "Los Angeles, CA",
+      "salary": "$100k - $140k",
+      "type": "Contract",
+      "category": "software-engineering",
+      "description": "Design user experiences for Microsoft's productivity tools, ensuring seamless integration across platforms.",
+      "responsibilities": [
+        "Create user-centered designs for Office and Teams applications",
+        "Conduct usability testing and gather user feedback",
+        "Work with developers to implement designs",
+        "Contribute to Microsoft's design system"
+      ],
+      "requirements": [
+        "5+ years of experience in UX design",
+        "Proficiency in design tools like Figma or Sketch",
+        "Strong understanding of user research techniques",
+        "Ability to collaborate across teams"
+      ],
+      "companyDescription": "Microsoft is a global leader in software, cloud, and AI solutions, empowering businesses and individuals worldwide.",
+      "companyAbout": "Since 1975, Microsoft has been at the forefront of technology, delivering innovative products like Windows, Office, and Azure. Join us to shape the future of tech.",
+      "companyBanner": "https://placehold.co/1200x200?text=Microsoft+Banner",
+      "companyLocation": "Redmond, WA",
+      "companyWebsite": "https://www.microsoft.com"
+    },
+    {
+      "id": 11,
+      "title": "Lead Data Analyst",
+      "company": "Airbnb",
+      "companyId": "airbnb",
+      "logo": "https://logo.clearbit.com/airbnb.com",
+      "location": "Seattle, WA",
+      "salary": "$110k - $150k",
+      "type": "Full-time",
+      "category": "software-engineering",
+      "description": "Analyze user data to optimize Airbnb's platform, providing insights to enhance the guest and host experience.",
+      "responsibilities": [
+        "Analyze booking and user behavior data to identify trends",
+        "Develop dashboards and visualizations for stakeholders",
+        "Collaborate with product teams to implement data-driven features",
+        "Ensure data quality and integrity"
+      ],
+      "requirements": [
+        "4+ years of experience in data analysis",
+        "Proficiency in SQL, Python, and Tableau",
+        "Experience with A/B testing and statistical analysis",
+        "Strong communication skills"
+      ],
+      "companyDescription": "Airbnb connects travelers with unique accommodations and experiences worldwide.",
+      "companyAbout": "Founded in 2008, Airbnb is a global platform for travel and hospitality. Join us to create belonging anywhere.",
+      "companyBanner": "https://placehold.co/1200x200?text=Airbnb+Banner",
+      "companyLocation": "San Francisco, CA",
+      "companyWebsite": "https://www.airbnb.com"
+    },
+    {
+      "id": 12,
+      "title": "Junior Data Analyst",
+      "company": "Square",
+      "companyId": "square",
+      "logo": "https://logo.clearbit.com/square.com",
+      "location": "Seattle, WA",
+      "salary": "$130k - $170k",
+      "type": "Contract",
+      "category": "software-engineering",
+      "description": "Support Square's analytics team by processing and analyzing payment data to improve merchant services.",
+      "responsibilities": [
+        "Clean and process payment transaction data",
+        "Create reports and visualizations for internal teams",
+        "Assist in developing predictive models",
+        "Collaborate with data scientists to support analytics projects"
+      ],
+      "requirements": [
+        "1-3 years of experience in data analysis",
+        "Proficiency in SQL and Excel",
+        "Familiarity with Python or R is a plus",
+        "Detail-oriented with strong analytical skills"
+      ],
+      "companyDescription": "Square empowers businesses with tools to accept payments and manage operations.",
+      "companyAbout": "Since 2009, Square has been helping businesses of all sizes grow with innovative payment solutions. Join us to simplify commerce.",
+      "companyBanner": "https://placehold.co/1200x200?text=Square+Banner",
+      "companyLocation": "San Francisco, CA",
+      "companyWebsite": "https://www.square.com"
+    },
+    {
+      "id": 13,
+      "title": "Principal Software Developer",
+      "company": "Dropbox",
+      "companyId": "dropbox",
+      "logo": "https://logo.clearbit.com/dropbox.com",
+      "location": "San Francisco, CA",
+      "salary": "$130k - $170k",
+      "type": "Freelance",
+      "category": "software-engineering",
+      "description": "Lead the development of Dropbox's file-sharing and collaboration tools, ensuring scalability and performance.",
+      "responsibilities": [
+        "Architect and implement new features for Dropbox's platform",
+        "Optimize backend services for high availability",
+        "Mentor developers and ensure code quality",
+        "Collaborate with product teams to align technical solutions"
+      ],
+      "requirements": [
+        "7+ years of experience in software development",
+        "Expertise in Python, Go, or Java",
+        "Experience with distributed systems",
+        "Strong leadership and problem-solving skills"
+      ],
+      "companyDescription": "Dropbox is a leading platform for file storage, sharing, and collaboration.",
+      "companyAbout": "Since 2007, Dropbox has been simplifying how people work together. Join us to make work more efficient and connected.",
+      "companyBanner": "https://placehold.co/1200x200?text=Dropbox+Banner",
+      "companyLocation": "San Francisco, CA",
+      "companyWebsite": "https://www.dropbox.com"
+    },
+    {
+      "id": 14,
+      "title": "Junior UI Designer",
+      "company": "Spotify",
+      "companyId": "spotify",
+      "logo": "https://logo.clearbit.com/spotify.com",
+      "location": "Austin, TX",
+      "salary": "$100k - $140k",
+      "type": "Freelance",
+      "category": "software-engineering",
+      "description": "Design intuitive interfaces for Spotify's music streaming platform, enhancing user engagement and accessibility.",
+      "responsibilities": [
+        "Create wireframes and prototypes for new features",
+        "Conduct user research to understand listener needs",
+        "Collaborate with developers to implement designs",
+        "Contribute to Spotify's design system"
+      ],
+      "requirements": [
+        "1-3 years of experience in UI design",
+        "Proficiency in Figma or Sketch",
+        "Understanding of mobile and web design principles",
+        "Strong attention to detail"
+      ],
+      "companyDescription": "Spotify is the world's leading music streaming service, connecting artists and listeners globally.",
+      "companyAbout": "Founded in 2006, Spotify transforms how people access and enjoy music and podcasts. Join us to amplify creativity.",
+      "companyBanner": "https://placehold.co/1200x200?text=Spotify+Banner",
+      "companyLocation": "Stockholm, Sweden",
+      "companyWebsite": "https://www.spotify.com"
+    }
+  ],
+"marketing": [
+  {
+      "id": 15,
+      "title": "Junior Marketing Manager",
+      "company": "Microsoft",
+      "companyId": "microsoft",
+      "logo": "https://logo.clearbit.com/microsoft.com",
+      "location": "Cupertino, CA",
+      "salary": "$110k - $150k",
+      "type": "Contract",
+      "category": "marketing",
+      "description": "Support Microsoft's marketing campaigns for cloud and productivity solutions, focusing on digital channels and analytics.",
+      "responsibilities": [
+        "Assist in planning and executing digital marketing campaigns",
+        "Analyze campaign performance using tools like Google Analytics",
+        "Coordinate with creative teams to develop marketing assets",
+        "Support event planning and execution"
+      ],
+      "requirements": [
+        "1-3 years of experience in digital marketing",
+        "Familiarity with SEO, PPC, and social media advertising",
+        "Proficiency in analytics tools",
+        "Strong organizational skills"
+      ],
+      "companyDescription": "Microsoft is a global leader in software, cloud, and AI solutions, empowering businesses and individuals worldwide.",
+      "companyAbout": "Since 1975, Microsoft has been at the forefront of technology, delivering innovative products like Windows, Office, and Azure. Join us to shape the future of tech.",
+      "companyBanner": "https://placehold.co/1200x200?text=Microsoft+Banner",
+      "companyLocation": "Redmond, WA",
+      "companyWebsite": "https://www.microsoft.com"
+    },
+{
+"id": 16,
+"title": "Junior Developer",
+"company": "Zoom",
+"logo": "https://logo.clearbit.com/zoom.com",
+"location": "Austin, TX",
+"salary": "$130k - $170k",
+"description": "Develop robust backend services and optimize performance.",
+"type": "Full-time",
+"category": "marketing"
+},
+{
+"id": 17,
+"title": "Lead Analyst",
+"company": "Shopify",
+"logo": "https://logo.clearbit.com/shopify.com",
+"location": "Bangalore, India",
+"salary": "$160k - $210k",
+"description": "Build scalable web applications using modern technologies.",
+"type": "Contract",
+"category": "marketing"
+},
+{
+"id": 18,
+"title": "Senior Analyst",
+"company": "Uber",
+"logo": "https://logo.clearbit.com/uber.com",
+"location": "Boston, MA",
+"salary": "$80k - $110k",
+"description": "Source and interview candidates for various roles.",
+"type": "Contract",
+"category": "marketing"
+},
+{
+"id": 19,
+"title": "Lead Developer",
+"company": "Netflix",
+"logo": "https://logo.clearbit.com/netflix.com",
+"location": "Cupertino, CA",
+"salary": "$160k - $210k",
+"description": "Design intuitive user interfaces and conduct user research.",
+"type": "Part-time",
+"category": "marketing"
+},
+{
+"id": 20,
+"title": "Junior Specialist",
+"company": "VMware",
+"logo": "https://logo.clearbit.com/vmware.com",
+"location": "Redmond, WA",
+"salary": "$80k - $110k",
+"description": "Manage CI/CD pipelines and cloud infrastructure.",
+"type": "Contract",
+"category": "marketing"
+},
+{
+"id": 21,
+"title": "Lead Analyst",
+"company": "Airbnb",
+"logo": "https://logo.clearbit.com/airbnb.com",
+"location": "Berlin, Germany",
+"salary": "$120k - $160k",
+"description": "Manage CI/CD pipelines and cloud infrastructure.",
+"type": "Part-time",
+"category": "marketing"
+},
+{
+"id": 22,
+"title": "Lead Engineer",
+"company": "SAP",
+"logo": "https://logo.clearbit.com/sap.com",
+"location": "Chicago, IL",
+"salary": "$110k - $150k",
+"description": "Manage CI/CD pipelines and cloud infrastructure.",
+"type": "Freelance",
+"category": "marketing"
+},
+{
+"id": 23,
+"title": "Junior Designer",
+"company": "Uber",
+"logo": "https://logo.clearbit.com/uber.com",
+"location": "Chicago, IL",
+"salary": "$100k - $140k",
+"description": "Build scalable web applications using modern technologies.",
+"type": "Part-time",
+"category": "marketing"
+},
+{
+"id": 24,
+"title": "Principal Manager",
+"company": "Slack",
+"logo": "https://logo.clearbit.com/slack.com",
+"location": "Remote",
+"salary": "$130k - $170k",
+"description": "Source and interview candidates for various roles.",
+"type": "Freelance",
+"category": "marketing"
+},
+{
+"id": 25,
+"title": "Principal Designer",
+"company": "Microsoft",
+"logo": "https://logo.clearbit.com/microsoft.com",
+"location": "Bangalore, India",
+"salary": "$80k - $110k",
+"description": "Conduct user interviews and usability testing.",
+"type": "Contract",
+"category": "marketing"
+},
+{
+"id": 26,
+"title": "Junior Manager",
+"company": "Square",
+"logo": "https://logo.clearbit.com/square.com",
+"location": "Remote",
+"salary": "$130k - $170k",
+"description": "Analyze large datasets to drive business insights.",
+"type": "Part-time",
+"category": "marketing"
+},
+{
+"id": 27,
+"title": "Senior Specialist",
+"company": "Oracle",
+"logo": "https://logo.clearbit.com/oracle.com",
+"location": "Austin, TX",
+"salary": "$180k - $250k",
+"description": "Manage CI/CD pipelines and cloud infrastructure.",
+"type": "Contract",
+"category": "marketing"
+},
+{
+"id": 28,
+"title": "Lead Designer",
+"company": "VMware",
+"logo": "https://logo.clearbit.com/vmware.com",
+"location": "Boston, MA",
+"salary": "$130k - $170k",
+"description": "Analyze large datasets to drive business insights.",
+"type": "Part-time",
+"category": "marketing"
+},
+{
+"id": 29,
+"title": "Senior Manager",
+"company": "Salesforce",
+"logo": "https://logo.clearbit.com/salesforce.com",
+"location": "Remote",
+"salary": "$80k - $110k",
+"description": "Conduct user interviews and usability testing.",
+"type": "Contract",
+"category": "marketing"
+}
+],
+"design": [
+{
+"id": 30,
+"title": "Senior Manager",
+"company": "Etsy",
+"logo": "https://logo.clearbit.com/etsy.com",
+"location": "New York, NY",
+"salary": "$110k - $150k",
+"description": "Manage CI/CD pipelines and cloud infrastructure.",
+"type": "Freelance",
+"category": "design"
+},
+{
+"id": 31,
+"title": "Senior Manager",
+"company": "Google",
+"logo": "https://logo.clearbit.com/google.com",
+"location": "Toronto, Canada",
+"salary": "$90k - $120k",
+"description": "Analyze large datasets to drive business insights.",
+"type": "Contract",
+"category": "design"
+},
+{
+"id": 32,
+"title": "Junior Engineer",
+"company": "Stripe",
+"logo": "https://logo.clearbit.com/stripe.com",
+"location": "Sydney, Australia",
+"salary": "$90k - $120k",
+"description": "Lead product development and collaborate with cross-functional teams.",
+"type": "Full-time",
+"category": "design"
+},
+{
+"id": 33,
+"title": "Lead Manager",
+"company": "Etsy",
+"logo": "https://logo.clearbit.com/etsy.com",
+"location": "Austin, TX",
+"salary": "$140k - $180k",
+"description": "Analyze large datasets to drive business insights.",
+"type": "Full-time",
+"category": "design"
+},
+{
+"id": 34,
+"title": "Senior Designer",
+"company": "Shopify",
+"logo": "https://logo.clearbit.com/shopify.com",
+"location": "Los Angeles, CA",
+"salary": "$180k - $250k",
+"description": "Lead product development and collaborate with cross-functional teams.",
+"type": "Part-time",
+"category": "design"
+},
+{
+"id": 35,
+"title": "Principal Designer",
+"company": "Microsoft",
+"logo": "https://logo.clearbit.com/microsoft.com",
+"location": "Boston, MA",
+"salary": "$150k - $200k",
+"description": "Build scalable web applications using modern technologies.",
+"type": "Full-time",
+"category": "design"
+},
+{
+"id": 36,
+"title": "Junior Developer",
+"company": "Airbnb",
+"logo": "https://logo.clearbit.com/airbnb.com",
+"location": "Sydney, Australia",
+"salary": "$160k - $210k",
+"description": "Develop robust backend services and optimize performance.",
+"type": "Freelance",
+"category": "design"
+},
+{
+"id": 37,
+"title": "Principal Developer",
+"company": "Tesla",
+"logo": "https://logo.clearbit.com/tesla.com",
+"location": "Los Angeles, CA",
+"salary": "$110k - $150k",
+"description": "Source and interview candidates for various roles.",
+"type": "Contract",
+"category": "design"
+},
+{
+"id": 38,
+"title": "Principal Specialist",
+"company": "VMware",
+"logo": "https://logo.clearbit.com/vmware.com",
+"location": "Los Angeles, CA",
+"salary": "$80k - $110k",
+"description": "Analyze large datasets to drive business insights.",
+"type": "Part-time",
+"category": "design"
+},
+{
+"id": 39,
+"title": "Lead Analyst",
+"company": "Shopify",
+"logo": "https://logo.clearbit.com/shopify.com",
+"location": "Sydney, Australia",
+"salary": "$140k - $180k",
+"description": "Lead product development and collaborate with cross-functional teams.",
+"type": "Freelance",
+"category": "design"
+}
+],
+"hr": [
+{
+"id": 40,
+"title": "Junior Designer",
+"company": "Microsoft",
+"logo": "https://logo.clearbit.com/microsoft.com",
+"location": "San Francisco, CA",
+"salary": "$160k - $210k",
+"description": "Manage CI/CD pipelines and cloud infrastructure.",
+"type": "Freelance",
+"category": "hr"
+},
+{
+"id": 41,
+"title": "Junior Manager",
+"company": "IBM",
+"logo": "https://logo.clearbit.com/ibm.com",
+"location": "Remote",
+"salary": "$80k - $110k",
+"description": "Manage CI/CD pipelines and cloud infrastructure.",
+"type": "Part-time",
+"category": "hr"
+},
+{
+"id": 42,
+"title": "Senior Developer",
+"company": "IBM",
+"logo": "https://logo.clearbit.com/ibm.com",
+"location": "Bangalore, India",
+"salary": "$130k - $170k",
+"description": "Manage CI/CD pipelines and cloud infrastructure.",
+"type": "Part-time",
+"category": "hr"
+},
+{
+"id": 43,
+"title": "Principal Manager",
+"company": "Amazon",
+"logo": "https://logo.clearbit.com/amazon.com",
+"location": "Toronto, Canada",
+"salary": "$110k - $150k",
+"description": "Manage CI/CD pipelines and cloud infrastructure.",
+"type": "Full-time",
+"category": "hr"
+},
+{
+"id": 44,
+"title": "Junior Designer",
+"company": "Meta",
+"logo": "https://logo.clearbit.com/meta.com",
+"location": "Redmond, WA",
+"salary": "$140k - $180k",
+"description": "Design intuitive user interfaces and conduct user research.",
+"type": "Part-time",
+"category": "hr"
+},
+{
+"id": 45,
+"title": "Junior Designer",
+"company": "Meta",
+"logo": "https://logo.clearbit.com/meta.com",
+"location": "Toronto, Canada",
+"salary": "$110k - $150k",
+"description": "Develop robust backend services and optimize performance.",
+"type": "Contract",
+"category": "hr"
+},
+{
+"id": 46,
+"title": "Principal Designer",
+"company": "Shopify",
+"logo": "https://logo.clearbit.com/shopify.com",
+"location": "Sydney, Australia",
+"salary": "$140k - $180k",
+"description": "Analyze large datasets to drive business insights.",
+"type": "Full-time",
+"category": "hr"
+},
+{
+"id": 47,
+"title": "Junior Manager",
+"company": "Dropbox",
+"logo": "https://logo.clearbit.com/dropbox.com",
+"location": "Toronto, Canada",
+"salary": "$150k - $200k",
+"description": "Conduct user interviews and usability testing.",
+"type": "Contract",
+"category": "hr"
+},
+{
+"id": 48,
+"title": "Junior Engineer",
+"company": "Adobe",
+"logo": "https://logo.clearbit.com/adobe.com",
+"location": "Austin, TX",
+"salary": "$120k - $160k",
+"description": "Develop robust backend services and optimize performance.",
+"type": "Part-time",
+"category": "hr"
+},
+{
+"id": 49,
+"title": "Junior Designer",
+"company": "SAP",
+"logo": "https://logo.clearbit.com/sap.com",
+"location": "Chicago, IL",
+"salary": "$170k - $220k",
+"description": "Drive user acquisition through innovative growth strategies.",
+"type": "Contract",
+"category": "hr"
+},
+{
+"id": 50,
+"title": "Lead Developer",
+"company": "Twilio",
+"logo": "https://logo.clearbit.com/twilio.com",
+"location": "Bangalore, India",
+"salary": "$100k - $140k",
+"description": "Design intuitive user interfaces and conduct user research.",
+"type": "Part-time",
+"category": "hr"
+},
+{
+"id": 51,
+"title": "Lead Developer",
+"company": "PayPal",
+"logo": "https://logo.clearbit.com/paypal.com",
+"location": "Redmond, WA",
+"salary": "$170k - $220k",
+"description": "Create engaging content for digital marketing campaigns.",
+"type": "Part-time",
+"category": "hr"
+},
+{
+"id": 52,
+"title": "Lead Engineer",
+"company": "Spotify",
+"logo": "https://logo.clearbit.com/spotify.com",
+"location": "Bangalore, India",
+"salary": "$180k - $250k",
+"description": "Build scalable web applications using modern technologies.",
+"type": "Part-time",
+"category": "hr"
+}
+],
+"sales": [
+{
+"id": 53,
+"title": "Lead Analyst",
+"company": "Oracle",
+"logo": "https://logo.clearbit.com/oracle.com",
+"location": "Boston, MA",
+"salary": "$100k - $140k",
+"description": "Source and interview candidates for various roles.",
+"type": "Contract",
+"category": "sales"
+},
+{
+"id": 54,
+"title": "Principal Developer",
+"company": "Microsoft",
+"logo": "https://logo.clearbit.com/microsoft.com",
+"location": "Cupertino, CA",
+"salary": "$110k - $150k",
+"description": "Analyze large datasets to drive business insights.",
+"type": "Contract",
+"category": "sales"
+},
+{
+"id": 55,
+"title": "Junior Developer",
+"company": "Square",
+"logo": "https://logo.clearbit.com/square.com",
+"location": "Toronto, Canada",
+"salary": "$150k - $200k",
+"description": "Design intuitive user interfaces and conduct user research.",
+"type": "Freelance",
+"category": "sales"
+},
+{
+"id": 56,
+"title": "Senior Manager",
+"company": "Adobe",
+"logo": "https://logo.clearbit.com/adobe.com",
+"location": "Seattle, WA",
+"salary": "$80k - $110k",
+"description": "Conduct user interviews and usability testing.",
+"type": "Full-time",
+"category": "sales"
+},
+{
+"id": 57,
+"title": "Principal Developer",
+"company": "Airbnb",
+"logo": "https://logo.clearbit.com/airbnb.com",
+"location": "Toronto, Canada",
+"salary": "$120k - $160k",
+"description": "Source and interview candidates for various roles.",
+"type": "Contract",
+"category": "sales"
+},
+{
+"id": 58,
+"title": "Senior Developer",
+"company": "Uber",
+"logo": "https://logo.clearbit.com/uber.com",
+"location": "Seattle, WA",
+"salary": "$130k - $170k",
+"description": "Lead product development and collaborate with cross-functional teams.",
+"type": "Full-time",
+"category": "sales"
+},
+{
+"id": 59,
+"title": "Junior Developer",
+"company": "Adobe",
+"logo": "https://logo.clearbit.com/adobe.com",
+"location": "Cupertino, CA",
+"salary": "$90k - $120k",
+"description": "Manage CI/CD pipelines and cloud infrastructure.",
+"type": "Contract",
+"category": "sales"
+},
+{
+"id": 60,
+"title": "Lead Analyst",
+"company": "Amazon",
+"logo": "https://logo.clearbit.com/amazon.com",
+"location": "Cupertino, CA",
+"salary": "$160k - $210k",
+"description": "Manage CI/CD pipelines and cloud infrastructure.",
+"type": "Part-time",
+"category": "sales"
+},
+{
+"id": 61,
+"title": "Principal Designer",
+"company": "Apple",
+"logo": "https://logo.clearbit.com/apple.com",
+"location": "Berlin, Germany",
+"salary": "$170k - $220k",
+"description": "Create engaging content for digital marketing campaigns.",
+"type": "Freelance",
+"category": "sales"
+},
+{
+"id": 62,
+"title": "Junior Manager",
+"company": "Adobe",
+"logo": "https://logo.clearbit.com/adobe.com",
+"location": "Cupertino, CA",
+"salary": "$90k - $120k",
+"description": "Manage CI/CD pipelines and cloud infrastructure.",
+"type": "Part-time",
+"category": "sales"
+},
+{
+"id": 63,
+"title": "Lead Developer",
+"company": "Meta",
+"logo": "https://logo.clearbit.com/meta.com",
+"location": "Boston, MA",
+"salary": "$140k - $180k",
+"description": "Analyze large datasets to drive business insights.",
+"type": "Freelance",
+"category": "sales"
+}
+],
+"finance": [
+{
+"id": 64,
+"title": "Junior Designer",
+"company": "Oracle",
+"logo": "https://logo.clearbit.com/oracle.com",
+"location": "Austin, TX",
+"salary": "$100k - $140k",
+"description": "Manage CI/CD pipelines and cloud infrastructure.",
+"type": "Freelance",
+"category": "finance"
+},
+{
+"id": 65,
+"title": "Junior Manager",
+"company": "Adobe",
+"logo": "https://logo.clearbit.com/adobe.com",
+"location": "Boston, MA",
+"salary": "$120k - $160k",
+"description": "Design intuitive user interfaces and conduct user research.",
+"type": "Contract",
+"category": "finance"
+},
+{
+"id": 66,
+"title": "Junior Designer",
+"company": "Netflix",
+"logo": "https://logo.clearbit.com/netflix.com",
+"location": "Austin, TX",
+"salary": "$110k - $150k",
+"description": "Build scalable web applications using modern technologies.",
+"type": "Part-time",
+"category": "finance"
+},
+{
+"id": 67,
+"title": "Principal Designer",
+"company": "Spotify",
+"logo": "https://logo.clearbit.com/spotify.com",
+"location": "Redmond, WA",
+"salary": "$80k - $110k",
+"description": "Drive user acquisition through innovative growth strategies.",
+"type": "Freelance",
+"category": "finance"
+},
+{
+"id": 68,
+"title": "Senior Designer",
+"company": "Meta",
+"logo": "https://logo.clearbit.com/google.com",
+"location": "Remote",
+"salary": "$110k - $150k",
+"description": "Analyze large datasets to drive business insights.",
+"type": "Freelance",
+"category": "finance"
+},
+{
+"id": 69,
+"title": "Principal Manager",
+"company": "Google",
+"logo": "https://logo.clearbit.com/slack.com",
+"location": "Redmond, WA",
+"salary": "$120k - $160k",
+"description": "Lead product development and collaborate with cross-functional teams.",
+"type": "Freelance",
+"category": "finance"
+},
+{
+"id": 70,
+"title": "Junior Manager",
+"company": "Airbnb",
+"logo": "https://logo.clearbit.com/hubspot.com",
+"location": "Los Angeles, CA",
+"salary": "$130k - $170k",
+"description": "Build scalable web applications using modern technologies.",
+"type": "Contract",
+"category": "finance"
+},
+{
+"id": 71,
+"title": "Principal Designer",
+"company": "Spotify",
+"logo": "https://logo.clearbit.com/adobe.com",
+"location": "Cupertino, CA",
+"salary": "$150k - $200k",
+"description": "Conduct user interviews and usability testing.",
+"type": "Part-time",
+"category": "finance"
+}
+],
+"operations": [
+{
+"id": 72,
+"title": "Junior Analyst",
+"company": "Salesforce",
+"logo": "https://logo.clearbit.com/twilio.com",
+"location": "Seattle, WA",
+"salary": "$150k - $200k",
+"description": "Design intuitive user interfaces and conduct user research.",
+"type": "Freelance",
+"category": "operations"
+},
+{
+"id": 73,
+"title": "Senior Manager",
+"company": "Uber",
+"logo": "https://logo.clearbit.com/slack.com",
+"location": "Chicago, IL",
+"salary": "$80k - $110k",
+"description": "Manage CI/CD pipelines and cloud infrastructure.",
+"type": "Freelance",
+"category": "operations"
+},
+{
+"id": 74,
+"title": "Lead Engineer",
+"company": "NVIDIA",
+"logo": "https://logo.clearbit.com/uber.com",
+"location": "San Francisco, CA",
+"salary": "$170k - $220k",
+"description": "Analyze large datasets to drive business insights.",
+"type": "Contract",
+"category": "operations"
+},
+{
+"id": 75,
+"title": "Principal Engineer",
+"company": "Microsoft",
+"logo": "https://logo.clearbit.com/vmware.com",
+"location": "Boston, MA",
+"salary": "$160k - $210k",
+"description": "Lead product development and collaborate with cross-functional teams.",
+"type": "Freelance",
+"category": "operations"
+},
+{
+"id": 76,
+"title": "Senior Manager",
+"company": "Slack",
+"logo": "https://logo.clearbit.com/dropbox.com",
+"location": "Toronto, Canada",
+"salary": "$100k - $140k",
+"description": "Build scalable web applications using modern technologies.",
+"type": "Full-time",
+"category": "operations"
+},
+{
+"id": 77,
+"title": "Lead Manager",
+"company": "Microsoft",
+"logo": "https://logo.clearbit.com/tesla.com",
+"location": "New York, NY",
+"salary": "$150k - $200k",
+"description": "Build scalable web applications using modern technologies.",
+"type": "Full-time",
+"category": "operations"
+},
+{
+"id": 78,
+"title": "Senior Analyst",
+"company": "IBM",
+"logo": "https://logo.clearbit.com/stripe.com",
+"location": "Cupertino, CA",
+"salary": "$140k - $180k",
+"description": "Manage CI/CD pipelines and cloud infrastructure.",
+"type": "Contract",
+"category": "operations"
+},
+{
+"id": 79,
+"title": "Junior Specialist",
+"company": "Shopify",
+"logo": "https://logo.clearbit.com/meta.com",
+"location": "Sydney, Australia",
+"salary": "$100k - $140k",
+"description": "Drive user acquisition through innovative growth strategies.",
+"type": "Part-time",
+"category": "operations"
+}
+],
+"product-management": [
+{
+"id": 80,
+"title": "Senior Developer",
+"company": "Salesforce",
+"logo": "https://logo.clearbit.com/netflix.com",
+"location": "Boston, MA",
+"salary": "$120k - $160k",
+"description": "Build scalable web applications using modern technologies.",
+"type": "Part-time",
+"category": "product-management"
+},
+{
+"id": 81,
+"title": "Junior Engineer",
+"company": "Airbnb",
+"logo": "https://logo.clearbit.com/uber.com",
+"location": "Redmond, WA",
+"salary": "$100k - $140k",
+"description": "Design intuitive user interfaces and conduct user research.",
+"type": "Full-time",
+"category": "product-management"
+},
+{
+"id": 82,
+"title": "Junior Engineer",
+"company": "Adobe",
+"logo": "https://logo.clearbit.com/uber.com",
+"location": "Berlin, Germany",
+"salary": "$170k - $220k",
+"description": "Analyze large datasets to drive business insights.",
+"type": "Full-time",
+"category": "product-management"
+},
+{
+"id": 83,
+"title": "Senior Specialist",
+"company": "IBM",
+"logo": "https://logo.clearbit.com/microsoft.com",
+"location": "Boston, MA",
+"salary": "$170k - $220k",
+"description": "Drive user acquisition through innovative growth strategies.",
+"type": "Full-time",
+"category": "product-management"
+},
+{
+"id": 84,
+"title": "Senior Specialist",
+"company": "VMware",
+"logo": "https://logo.clearbit.com/uber.com",
+"location": "Berlin, Germany",
+"salary": "$120k - $160k",
+"description": "Create engaging content for digital marketing campaigns.",
+"type": "Part-time",
+"category": "product-management"
+},
+{
+"id": 85,
+"title": "Senior Analyst",
+"company": "Microsoft",
+"logo": "https://logo.clearbit.com/twilio.com",
+"location": "Los Angeles, CA",
+"salary": "$130k - $170k",
+"description": "Build scalable web applications using modern technologies.",
+"type": "Part-time",
+"category": "product-management"
+},
+{
+"id": 86,
+"title": "Junior Analyst",
+"company": "Meta",
+"logo": "https://logo.clearbit.com/shopify.com",
+"location": "Redmond, WA",
+"salary": "$100k - $140k",
+"description": "Create engaging content for digital marketing campaigns.",
+"type": "Freelance",
+"category": "product-management"
+},
+{
+"id": 87,
+"title": "Junior Developer",
+"company": "Twilio",
+"logo": "https://logo.clearbit.com/oracle.com",
+"location": "London, UK",
+"salary": "$150k - $200k",
+"description": "Conduct user interviews and usability testing.",
+"type": "Freelance",
+"category": "product-management"
+},
+{
+"id": 88,
+"title": "Senior Engineer",
+"company": "Square",
+"logo": "https://logo.clearbit.com/salesforce.com",
+"location": "Remote",
+"salary": "$170k - $220k",
+"description": "Conduct user interviews and usability testing.",
+"type": "Contract",
+"category": "product-management"
+},
+{
+"id": 89,
+"title": "Principal Engineer",
+"company": "Slack",
+"logo": "https://logo.clearbit.com/google.com",
+"location": "Toronto, Canada",
+"salary": "$140k - $180k",
+"description": "Analyze large datasets to drive business insights.",
+"type": "Freelance",
+"category": "product-management"
+}
+],
+"data-science": [
+{
+"id": 90,
+"title": "Senior Engineer",
+"company": "NVIDIA",
+"logo": "https://logo.clearbit.com/netflix.com",
+"location": "London, UK",
+"salary": "$140k - $180k",
+"description": "Develop robust backend services and optimize performance.",
+"type": "Full-time",
+"category": "data-science"
+},
+{
+"id": 91,
+"title": "Lead Analyst",
+"company": "Square",
+"logo": "https://logo.clearbit.com/square.com",
+"location": "Remote",
+"salary": "$120k - $160k",
+"description": "Analyze large datasets to drive business insights.",
+"type": "Part-time",
+"category": "data-science"
+},
+{
+"id": 92,
+"title": "Senior Manager",
+"company": "Airbnb",
+"logo": "https://logo.clearbit.com/salesforce.com",
+"location": "New York, NY",
+"salary": "$90k - $120k",
+"description": "Develop robust backend services and optimize performance.",
+"type": "Full-time",
+"category": "data-science"
+},
+{
+"id": 93,
+"title": "Lead Designer",
+"company": "Apple",
+"logo": "https://logo.clearbit.com/stripe.com",
+"location": "Berlin, Germany",
+"salary": "$170k - $220k",
+"description": "Create engaging content for digital marketing campaigns.",
+"type": "Contract",
+"category": "data-science"
+},
+{
+"id": 94,
+"title": "Senior Manager",
+"company": "Tesla",
+"logo": "https://logo.clearbit.com/amazon.com",
+"location": "Sydney, Australia",
+"salary": "$150k - $200k",
+"description": "Manage CI/CD pipelines and cloud infrastructure.",
+"type": "Part-time",
+"category": "data-science"
+},
+{
+"id": 95,
+"title": "Junior Analyst",
+"company": "VMware",
+"logo": "https://logo.clearbit.com/google.com",
+"location": "Remote",
+"salary": "$130k - $170k",
+"description": "Build scalable web applications using modern technologies.",
+"type": "Freelance",
+"category": "data-science"
+},
+{
+"id": 96,
+"title": "Lead Specialist",
+"company": "Spotify",
+"logo": "https://logo.clearbit.com/airbnb.com",
+"location": "Remote",
+"salary": "$160k - $210k",
+"description": "Source and interview candidates for various roles.",
+"type": "Part-time",
+"category": "data-science"
+},
+{
+"id": 97,
+"title": "Senior Specialist",
+"company": "SAP",
+"logo": "https://logo.clearbit.com/uber.com",
+"location": "Toronto, Canada",
+"salary": "$150k - $200k",
+"description": "Develop robust backend services and optimize performance.",
+"type": "Contract",
+"category": "data-science"
+},
+{
+"id": 98,
+"title": "Junior Developer",
+"company": "Tesla",
+"logo": "https://logo.clearbit.com/airbnb.com",
+"location": "Seattle, WA",
+"salary": "$80k - $110k",
+"description": "Design intuitive user interfaces and conduct user research.",
+"type": "Part-time",
+"category": "data-science"
+}
+],
+"devops": [
+{
+"id": 99,
+"title": "Junior Analyst",
+"company": "Adobe",
+"logo": "https://logo.clearbit.com/hubspot.com",
+"location": "Cupertino, CA",
+"salary": "$150k - $200k",
+"description": "Conduct user interviews and usability testing.",
+"type": "Freelance",
+"category": "devops"
+},
+{
+"id": 100,
+"title": "Principal Specialist",
+"company": "PayPal",
+"logo": "https://logo.clearbit.com/zoom.com",
+"location": "San Francisco, CA",
+"salary": "$170k - $220k",
+"description": "Source and interview candidates for various roles.",
+"type": "Freelance",
+"category": "devops"
+},
+{
+"id": 101,
+"title": "Lead Developer",
+"company": "Oracle",
+"logo": "https://logo.clearbit.com/hubspot.com",
+"location": "Redmond, WA",
+"salary": "$130k - $170k",
+"description": "Conduct user interviews and usability testing.",
+"type": "Contract",
+"category": "devops"
+},
+{
+"id": 102,
+"title": "Senior Designer",
+"company": "VMware",
+"logo": "https://logo.clearbit.com/stripe.com",
+"location": "Berlin, Germany",
+"salary": "$100k - $140k",
+"description": "Create engaging content for digital marketing campaigns.",
+"type": "Part-time",
+"category": "devops"
+},
+{
+"id": 103,
+"title": "Principal Developer",
+"company": "NVIDIA",
+"logo": "https://logo.clearbit.com/adobe.com",
+"location": "Bangalore, India",
+"salary": "$150k - $200k",
+"description": "Analyze large datasets to drive business insights.",
+"type": "Full-time",
+"category": "devops"
+},
+{
+"id": 104,
+"title": "Senior Designer",
+"company": "Adobe",
+"logo": "https://logo.clearbit.com/netflix.com",
+"location": "London, UK",
+"salary": "$130k - $170k",
+"description": "Source and interview candidates for various roles.",
+"type": "Freelance",
+"category": "devops"
+},
+{
+"id": 105,
+"title": "Lead Manager",
+"company": "Dropbox",
+"logo": "https://logo.clearbit.com/etsy.com",
+"location": "Seattle, WA",
+"salary": "$170k - $220k",
+"description": "Create engaging content for digital marketing campaigns.",
+"type": "Part-time",
+"category": "devops"
+},
+{
+"id": 106,
+"title": "Principal Developer",
+"company": "Shopify",
+"logo": "https://logo.clearbit.com/cisco.com",
+"location": "London, UK",
+"salary": "$170k - $220k",
+"description": "Lead product development and collaborate with cross-functional teams.",
+"type": "Part-time",
+"category": "devops"
+},
+{
+"id": 107,
+"title": "Principal Analyst",
+"company": "Twilio",
+"logo": "https://logo.clearbit.com/netflix.com",
+"location": "San Francisco, CA",
+"salary": "$100k - $140k",
+"description": "Conduct user interviews and usability testing.",
+"type": "Full-time",
+"category": "devops"
+},
+{
+"id": 108,
+"title": "Principal Developer",
+"company": "Stripe",
+"logo": "https://logo.clearbit.com/vmware.com",
+"location": "Redmond, WA",
+"salary": "$110k - $150k",
+"description": "Source and interview candidates for various roles.",
+"type": "Part-time",
+"category": "devops"
+},
+{
+"id": 109,
+"title": "Lead Developer",
+"company": "Meta",
+"logo": "https://logo.clearbit.com/netflix.com",
+"location": "Los Angeles, CA",
+"salary": "$150k - $200k",
+"description": "Conduct user interviews and usability testing.",
+"type": "Full-time",
+"category": "devops"
+},
+{
+"id": 110,
+"title": "Senior Engineer",
+"company": "Oracle",
+"logo": "https://logo.clearbit.com/square.com",
+"location": "Chicago, IL",
+"salary": "$100k - $140k",
+"description": "Analyze large datasets to drive business insights.",
+"type": "Full-time",
+"category": "devops"
+},
+{
+"id": 111,
+"title": "Senior Specialist",
+"company": "Shopify",
+"logo": "https://logo.clearbit.com/adobe.com",
+"location": "Austin, TX",
+"salary": "$140k - $180k",
+"description": "Drive user acquisition through innovative growth strategies.",
+"type": "Full-time",
+"category": "devops"
+}
+]
+}
