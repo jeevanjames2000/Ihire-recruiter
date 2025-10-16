@@ -18,13 +18,13 @@ function TagsInput({ value = [], onChange, placeholder = 'Add tag' }) {
         {value.map((t, i) => (
           <span
             key={i}
-            className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gray-100 text-sm text-gray-700"
+            className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-100 text-sm text-slate-700"
           >
             <span>{t}</span>
             <button
               type="button"
               onClick={() => remove(t)}
-              className="text-gray-500 hover:text-gray-700"
+              className="text-slate-500 hover:text-slate-900"
             >
               ×
             </button>
@@ -42,12 +42,12 @@ function TagsInput({ value = [], onChange, placeholder = 'Add tag' }) {
               add();
             }
           }}
-          className="flex-1 rounded border border-gray-200 p-2 text-sm focus:ring-2 focus:ring-indigo-100"
+          className="flex-1 rounded border border-gray-200 p-2 text-sm focus:ring-2 focus:ring-[#48adb9]/10"
         />
         <button
           type="button"
           onClick={add}
-          className="px-3 py-2 bg-indigo-600 text-white rounded"
+          className="px-3 py-2 bg-gradient-to-r from-[#48adb9] to-[#3a929d] text-white rounded hover:from-[#3a929d] hover:to-[#2c7d84] transition-all duration-300"
         >
           Add
         </button>
@@ -140,7 +140,7 @@ export default function CreateJobPage() {
   
   useEffect(() => {
     if (userId) {
-      fetch(`${NEXT_PUBLIC_API_URL}/api/recruiter/${userId}/companies`, {
+      fetch(`/api/recruiter/${userId}/companies`, {
         headers: {
           'Authorization': `Bearer ${window.localStorage.getItem('token')}`,
         },
@@ -155,7 +155,7 @@ export default function CreateJobPage() {
 
   
   useEffect(() => {
-    fetch('http://localhost:5000/api/industries')
+    fetch('/api/industries')
       .then((res) => res.json())
       .then(setIndustries)
       .catch((error) => console.error('Error fetching industries:', error));
@@ -192,7 +192,7 @@ export default function CreateJobPage() {
   }, [form.category_id]);
 
   useEffect(() => {
-    fetch(`${process.env.NEXT_PUBLIC_API_URL}api/qualifications`)
+    fetch(`api/qualifications`)
       .then((res) => res.json())
       .then((data) => {
         const uniqueCategories = [...new Set(data.map((item) => item.category))].map((category) => ({
@@ -299,7 +299,7 @@ export default function CreateJobPage() {
 
     try {
       const token = typeof window !== 'undefined' ? window.localStorage.getItem('token') : null;
-      const base = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000';
+      const base ='http://localhost:5000';
       const res = await fetch(`${base}/api/jobs/createJob`, {
         method: 'POST',
         headers: {
@@ -350,14 +350,14 @@ export default function CreateJobPage() {
     if (storedCompany && useStoredCompany) {
       return (
         <div className="mb-4">
-          <label className="block text-sm font-medium text-gray-700">Company</label>
+          <label className="block text-sm font-medium text-slate-500">Company</label>
           <div className="mt-1 flex items-center gap-3">
             <div className="flex-1">
               <select
                 name="company_id"
                 value={storedCompany.id}
                 onChange={handleChange}
-                className="w-full rounded border border-gray-200 p-2 bg-gray-50"
+                className="w-full rounded border border-gray-200 p-2 bg-slate-50 focus:ring-2 focus:ring-[#48adb9]/10"
                 disabled
               >
                 <option value={storedCompany.id}>{storedCompany.name}</option>
@@ -365,7 +365,7 @@ export default function CreateJobPage() {
             </div>
             <button
               type="button"
-              className="px-3 py-2 border rounded text-sm"
+              className="px-3 py-2 border rounded text-sm text-slate-600 hover:text-slate-900"
               onClick={() => {
                 setUseStoredCompany(false);
                 setForm((f) => ({ ...f, company_id: '' }));
@@ -380,12 +380,12 @@ export default function CreateJobPage() {
 
     return (
       <div className="mb-4">
-        <label className="block text-sm font-medium text-gray-700">Company</label>
+        <label className="block text-sm font-medium text-slate-500">Company</label>
         <select
           name="company_id"
           value={form.company_id}
           onChange={handleChange}
-          className="mt-1 w-full rounded border border-gray-200 p-2 focus:ring-2 focus:ring-indigo-100"
+          className="mt-1 w-full rounded border border-gray-200 p-2 focus:ring-2 focus:ring-[#48adb9]/10"
           required
         >
           <option value="">Select Company</option>
@@ -395,9 +395,9 @@ export default function CreateJobPage() {
             </option>
           ))}
         </select>
-        <div className="mt-2 text-sm text-gray-500">
+        <div className="mt-2 text-sm text-slate-500">
           Don't have a company?{' '}
-          <a href="/register-company" className="text-indigo-600 underline">
+          <a href="/register-company" className="text-[#48adb9] underline hover:text-[#3a929d]">
             Register your company
           </a>
           .
@@ -407,10 +407,10 @@ export default function CreateJobPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 py-8 px-4">
+    <div className="min-h-screen bg-slate-50 py-8 px-4">
       <div className="max-w-5xl mx-auto">
-        <h1 className="text-2xl font-semibold text-gray-900 mb-3">Post a Job</h1>
-        <p className="text-sm text-gray-600 mb-6">
+        <h1 className="text-2xl font-semibold text-slate-900 mb-3">Post a Job</h1>
+        <p className="text-sm text-slate-500 mb-6">
           Create a job listing. Enter the job description below.
         </p>
 
@@ -418,17 +418,17 @@ export default function CreateJobPage() {
           <CompanySelector />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div className="md:col-span-2">
-              <label className="block text-sm font-medium text-gray-700">Job Title</label>
+              <label className="block text-sm font-medium text-slate-500">Job Title</label>
               <input
                 value={form.title}
                 onChange={(e) => setForm((s) => ({ ...s, title: e.target.value }))}
                 placeholder="Senior Frontend Engineer"
-                className="mt-1 w-full rounded border border-gray-200 p-2 focus:ring-2 focus:ring-indigo-100"
+                className="mt-1 w-full rounded border border-gray-200 p-2 focus:ring-2 focus:ring-[#48adb9]/10"
                 required
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-gray-700">Vacancies</label>
+              <label className="block text-sm font-medium text-slate-500">Vacancies</label>
               <input
                 type="number"
                 min="1"
@@ -436,27 +436,27 @@ export default function CreateJobPage() {
                 onChange={(e) =>
                   setForm((s) => ({ ...s, vacancies: Number(e.target.value) }))
                 }
-                className="mt-1 w-full rounded border border-gray-200 p-2 focus:ring-2 focus:ring-indigo-100"
+                className="mt-1 w-full rounded border border-gray-200 p-2 focus:ring-2 focus:ring-[#48adb9]/10"
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-gray-700">Role</label>
+              <label className="block text-sm font-medium text-slate-500">Role</label>
               <input
                 value={form.role}
                 onChange={(e) => setForm((s) => ({ ...s, role: e.target.value }))}
-                className="mt-1 w-full rounded border border-gray-200 p-2 focus:ring-2 focus:ring-indigo-100"
+                className="mt-1 w-full rounded border border-gray-200 p-2 focus:ring-2 focus:ring-[#48adb9]/10"
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-gray-700">Location</label>
+              <label className="block text-sm font-medium text-slate-500">Location</label>
               <input
                 value={form.location}
                 onChange={(e) => setForm((s) => ({ ...s, location: e.target.value }))}
-                className="mt-1 w-full rounded border border-gray-200 p-2 focus:ring-2 focus:ring-indigo-100"
+                className="mt-1 w-full rounded border border-gray-200 p-2 focus:ring-2 focus:ring-[#48adb9]/10"
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-gray-700">
+              <label className="block text-sm font-medium text-slate-500">
                 Employment Type
               </label>
               <select
@@ -464,7 +464,7 @@ export default function CreateJobPage() {
                 onChange={(e) =>
                   setForm((s) => ({ ...s, employment_type: e.target.value }))
                 }
-                className="mt-1 w-full rounded border border-gray-200 p-2 focus:ring-2 focus:ring-indigo-100"
+                className="mt-1 w-full rounded border border-gray-200 p-2 focus:ring-2 focus:ring-[#48adb9]/10"
               >
                 <option>Full-time</option>
                 <option>Part-time</option>
@@ -474,7 +474,7 @@ export default function CreateJobPage() {
               </select>
             </div>
             <div>
-              <label className="block text-sm font-medium text-gray-700">
+              <label className="block text-sm font-medium text-slate-500">
                 Experience Min (years)
               </label>
               <input
@@ -484,11 +484,11 @@ export default function CreateJobPage() {
                 onChange={(e) =>
                   setForm((s) => ({ ...s, experience_min: e.target.value }))
                 }
-                className="mt-1 w-full rounded border border-gray-200 p-2 focus:ring-2 focus:ring-indigo-100"
+                className="mt-1 w-full rounded border border-gray-200 p-2 focus:ring-2 focus:ring-[#48adb9]/10"
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-gray-700">
+              <label className="block text-sm font-medium text-slate-500">
                 Experience Max (years)
               </label>
               <input
@@ -498,11 +498,11 @@ export default function CreateJobPage() {
                 onChange={(e) =>
                   setForm((s) => ({ ...s, experience_max: e.target.value }))
                 }
-                className="mt-1 w-full rounded border border-gray-200 p-2 focus:ring-2 focus:ring-indigo-100"
+                className="mt-1 w-full rounded border border-gray-200 p-2 focus:ring-2 focus:ring-[#48adb9]/10"
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-gray-700">
+              <label className="block text-sm font-medium text-slate-500">
                 Salary Min (INR)
               </label>
               <input
@@ -511,11 +511,11 @@ export default function CreateJobPage() {
                 onChange={(e) =>
                   setForm((s) => ({ ...s, salary_min: e.target.value }))
                 }
-                className="mt-1 w-full rounded border border-gray-200 p-2 focus:ring-2 focus:ring-indigo-100"
+                className="mt-1 w-full rounded border border-gray-200 p-2 focus:ring-2 focus:ring-[#48adb9]/10"
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-gray-700">
+              <label className="block text-sm font-medium text-slate-500">
                 Salary Max (INR)
               </label>
               <input
@@ -524,7 +524,7 @@ export default function CreateJobPage() {
                 onChange={(e) =>
                   setForm((s) => ({ ...s, salary_max: e.target.value }))
                 }
-                className="mt-1 w-full rounded border border-gray-200 p-2 focus:ring-2 focus:ring-indigo-100"
+                className="mt-1 w-full rounded border border-gray-200 p-2 focus:ring-2 focus:ring-[#48adb9]/10"
               />
             </div>
             <div className="md:col-span-3">
@@ -537,15 +537,15 @@ export default function CreateJobPage() {
                   }
                   className="rounded"
                 />
-                <span className="text-sm text-gray-700">Hide salary</span>
+                <span className="text-sm text-slate-500">Hide salary</span>
               </label>
             </div>
             <div className="md:col-span-3">
-              <label className="block text-sm font-medium text-gray-700">Education</label>
+              <label className="block text-sm font-medium text-slate-500">Education</label>
               <input
                 value={form.education}
                 onChange={(e) => setForm((s) => ({ ...s, education: e.target.value }))}
-                className="mt-1 w-full rounded border border-gray-200 p-2 focus:ring-2 focus:ring-indigo-100"
+                className="mt-1 w-full rounded border border-gray-200 p-2 focus:ring-2 focus:ring-[#48adb9]/10"
               />
             </div>
             <div className="md:col-span-3">
@@ -553,7 +553,7 @@ export default function CreateJobPage() {
                 <div>
                   <label
                     htmlFor="industry_id"
-                    className="block text-sm font-medium text-gray-700"
+                    className="block text-sm font-medium text-slate-500"
                   >
                     Industry
                   </label>
@@ -562,7 +562,7 @@ export default function CreateJobPage() {
                     id="industry_id"
                     value={form.industry_id}
                     onChange={handleChange}
-                    className={`border p-2 rounded w-full ${
+                    className={`border p-2 rounded w-full focus:ring-2 focus:ring-[#48adb9]/10 ${
                       errors.industry_id ? 'border-red-500' : 'border-gray-300'
                     }`}
                     required
@@ -581,7 +581,7 @@ export default function CreateJobPage() {
                 <div>
                   <label
                     htmlFor="category_id"
-                    className="block text-sm font-medium text-gray-700"
+                    className="block text-sm font-medium text-slate-500"
                   >
                     Category
                   </label>
@@ -590,7 +590,7 @@ export default function CreateJobPage() {
                     id="category_id"
                     value={form.category_id}
                     onChange={handleChange}
-                    className={`border p-2 rounded w-full ${
+                    className={`border p-2 rounded w-full focus:ring-2 focus:ring-[#48adb9]/10 ${
                       errors.category_id ? 'border-red-500' : 'border-gray-300'
                     }`}
                     required
@@ -610,7 +610,7 @@ export default function CreateJobPage() {
                 <div>
                   <label
                     htmlFor="subcategory_id"
-                    className="block text-sm font-medium text-gray-700"
+                    className="block text-sm font-medium text-slate-500"
                   >
                     Subcategory
                   </label>
@@ -619,7 +619,7 @@ export default function CreateJobPage() {
                     id="subcategory_id"
                     value={form.subcategory_id}
                     onChange={handleChange}
-                    className={`border p-2 rounded w-full ${
+                    className={`border p-2 rounded w-full focus:ring-2 focus:ring-[#48adb9]/10 ${
                       errors.subcategory_id ? 'border-red-500' : 'border-gray-300'
                     }`}
                     required
@@ -643,7 +643,7 @@ export default function CreateJobPage() {
                 <div>
                   <label
                     htmlFor="qualification_category_id"
-                    className="block text-sm font-medium text-gray-700"
+                    className="block text-sm font-medium text-slate-500"
                   >
                     Qualification Category
                   </label>
@@ -652,7 +652,7 @@ export default function CreateJobPage() {
                     id="qualification_category_id"
                     value={form.qualification_category_id}
                     onChange={handleChange}
-                    className={`border p-2 rounded w-full ${
+                    className={`border p-2 rounded w-full focus:ring-2 focus:ring-[#48adb9]/10 ${
                       errors.qualification_category_id
                         ? 'border-red-500'
                         : 'border-gray-300'
@@ -675,7 +675,7 @@ export default function CreateJobPage() {
                 <div>
                   <label
                     htmlFor="qualification_subcategory_id"
-                    className="block text-sm font-medium text-gray-700"
+                    className="block text-sm font-medium text-slate-500"
                   >
                     Qualification Subcategory
                   </label>
@@ -684,7 +684,7 @@ export default function CreateJobPage() {
                     id="qualification_subcategory_id"
                     value={form.qualification_subcategory_id}
                     onChange={handleChange}
-                    className={`border p-2 rounded w-full ${
+                    className={`border p-2 rounded w-full focus:ring-2 focus:ring-[#48adb9]/10 ${
                       errors.qualification_subcategory_id
                         ? 'border-red-500'
                         : 'border-gray-300'
@@ -708,7 +708,7 @@ export default function CreateJobPage() {
               </div>
             </div>
             <div className="md:col-span-3">
-              <label className="block text-sm font-medium text-gray-700">Key Skills</label>
+              <label className="block text-sm font-medium text-slate-500">Key Skills</label>
               <div className="mt-2">
                 <TagsInput
                   value={form.skills}
@@ -718,7 +718,7 @@ export default function CreateJobPage() {
               </div>
             </div>
             <div className="md:col-span-3">
-              <label className="block text-sm font-medium text-gray-700">
+              <label className="block text-sm font-medium text-slate-500">
                 Labels / Tags
               </label>
               <div className="mt-2">
@@ -730,33 +730,33 @@ export default function CreateJobPage() {
               </div>
             </div>
             <div className="md:col-span-3">
-              <label className="block text-sm font-medium text-gray-700">
+              <label className="block text-sm font-medium text-slate-500">
                 Job Description
               </label>
               <textarea
                 value={description}
                 onChange={(e) => setDescription(e.target.value)}
                 placeholder="Enter job description here..."
-                className="mt-1 w-full rounded border border-gray-200 p-2 focus:ring-2 focus:ring-indigo-100"
+                className="mt-1 w-full rounded border border-gray-200 p-2 focus:ring-2 focus:ring-[#48adb9]/10"
                 rows={6}
                 required
               />
             </div>
             <div className="md:col-span-3">
-              <label className="block text-sm font-medium text-gray-700">
+              <label className="block text-sm font-medium text-slate-500">
                 Responsibilities
               </label>
               <textarea
                 value={responsibilities}
                 onChange={(e) => setResponsibilities(e.target.value)}
                 placeholder="Enter responsibilities here..."
-                className="mt-1 w-full rounded border border-gray-200 p-2 focus:ring-2 focus:ring-indigo-100"
+                className="mt-1 w-full rounded border border-gray-200 p-2 focus:ring-2 focus:ring-[#48adb9]/10"
                 rows={4}
                 required
               />
             </div>
             <div className="md:col-span-3">
-              <label className="block text-sm font-medium text-gray-700">
+              <label className="block text-sm font-medium text-slate-500">
                 Qualifications
               </label>
               <textarea
@@ -765,16 +765,16 @@ export default function CreateJobPage() {
                   setForm((s) => ({ ...s, qualifications: e.target.value }))
                 }
                 rows={4}
-                className="mt-1 w-full rounded border border-gray-200 p-2 focus:ring-2 focus:ring-indigo-100"
+                className="mt-1 w-full rounded border border-gray-200 p-2 focus:ring-2 focus:ring-[#48adb9]/10"
               />
             </div>
             <div className="md:col-span-3">
-              <h3 className="text-sm font-medium text-gray-800 mt-4">
+              <h3 className="text-sm font-medium text-slate-900 mt-4">
                 Walk-in Details (optional)
               </h3>
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mt-2">
                 <div>
-                  <label className="text-sm text-gray-600">Start Date</label>
+                  <label className="text-sm text-slate-500">Start Date</label>
                   <input
                     type="date"
                     onChange={(e) =>
@@ -786,11 +786,11 @@ export default function CreateJobPage() {
                         },
                       }))
                     }
-                    className="mt-1 w-full rounded border border-gray-200 p-2"
+                    className="mt-1 w-full rounded border border-gray-200 p-2 focus:ring-2 focus:ring-[#48adb9]/10"
                   />
                 </div>
                 <div>
-                  <label className="text-sm text-gray-600">Duration (days)</label>
+                  <label className="text-sm text-slate-500">Duration (days)</label>
                   <input
                     type="number"
                     onChange={(e) =>
@@ -802,11 +802,11 @@ export default function CreateJobPage() {
                         },
                       }))
                     }
-                    className="mt-1 w-full rounded border border-gray-200 p-2"
+                    className="mt-1 w-full rounded border border-gray-200 p-2 focus:ring-2 focus:ring-[#48adb9]/10"
                   />
                 </div>
                 <div>
-                  <label className="text-sm text-gray-600">Timing</label>
+                  <label className="text-sm text-slate-500">Timing</label>
                   <input
                     onChange={(e) =>
                       setForm((s) => ({
@@ -817,11 +817,11 @@ export default function CreateJobPage() {
                         },
                       }))
                     }
-                    className="mt-1 w-full rounded border border-gray-200 p-2"
+                    className="mt-1 w-full rounded border border-gray-200 p-2 focus:ring-2 focus:ring-[#48adb9]/10"
                   />
                 </div>
                 <div>
-                  <label className="text-sm text-gray-600">Contact Person</label>
+                  <label className="text-sm text-slate-500">Contact Person</label>
                   <input
                     onChange={(e) =>
                       setForm((s) => ({
@@ -832,11 +832,11 @@ export default function CreateJobPage() {
                         },
                       }))
                     }
-                    className="mt-1 w-full rounded border border-gray-200 p-2"
+                    className="mt-1 w-full rounded border border-gray-200 p-2 focus:ring-2 focus:ring-[#48adb9]/10"
                   />
                 </div>
                 <div>
-                  <label className="text-sm text-gray-600">Contact Number</label>
+                  <label className="text-sm text-slate-500">Contact Number</label>
                   <input
                     onChange={(e) =>
                       setForm((s) => ({
@@ -847,11 +847,11 @@ export default function CreateJobPage() {
                         },
                       }))
                     }
-                    className="mt-1 w-full rounded border border-gray-200 p-2"
+                    className="mt-1 w-full rounded border border-gray-200 p-2 focus:ring-2 focus:ring-[#48adb9]/10"
                   />
                 </div>
                 <div>
-                  <label className="text-sm text-gray-600">Venue</label>
+                  <label className="text-sm text-slate-500">Venue</label>
                   <input
                     onChange={(e) =>
                       setForm((s) => ({
@@ -862,11 +862,11 @@ export default function CreateJobPage() {
                         },
                       }))
                     }
-                    className="mt-1 w-full rounded border border-gray-200 p-2"
+                    className="mt-1 w-full rounded border border-gray-200 p-2 focus:ring-2 focus:ring-[#48adb9]/10"
                   />
                 </div>
                 <div className="sm:col-span-3">
-                  <label className="text-sm text-gray-600">Google Map URL</label>
+                  <label className="text-sm text-slate-500">Google Map URL</label>
                   <input
                     onChange={(e) =>
                       setForm((s) => ({
@@ -877,24 +877,24 @@ export default function CreateJobPage() {
                         },
                       }))
                     }
-                    className="mt-1 w-full rounded border border-gray-200 p-2"
+                    className="mt-1 w-full rounded border border-gray-200 p-2 focus:ring-2 focus:ring-[#48adb9]/10"
                   />
                 </div>
               </div>
             </div>
             <div className="md:col-span-3">
-              <h3 className="text-sm font-medium text-gray-800 mt-4">
+              <h3 className="text-sm font-medium text-slate-900 mt-4">
                 Candidate Questions
               </h3>
               <div className="flex gap-2 mt-2">
                 <input
-                  className="flex-1 rounded border border-gray-200 p-2"
+                  className="flex-1 rounded border border-gray-200 p-2 focus:ring-2 focus:ring-[#48adb9]/10"
                   placeholder="Question text"
                   value={questionText}
                   onChange={(e) => setQuestionText(e.target.value)}
                 />
                 <select
-                  className="rounded border border-gray-200 p-2"
+                  className="rounded border border-gray-200 p-2 focus:ring-2 focus:ring-[#48adb9]/10"
                   value={questionType}
                   onChange={(e) => setQuestionType(e.target.value)}
                 >
@@ -906,7 +906,7 @@ export default function CreateJobPage() {
                 <button
                   type="button"
                   onClick={addQuestion}
-                  className="px-3 py-2 bg-indigo-600 text-white rounded"
+                  className="px-3 py-2 bg-gradient-to-r from-[#48adb9] to-[#3a929d] text-white rounded hover:from-[#3a929d] hover:to-[#2c7d84] transition-all duration-300"
                 >
                   Add
                 </button>
@@ -915,11 +915,11 @@ export default function CreateJobPage() {
                 {form.questions.map((q, i) => (
                   <li
                     key={i}
-                    className="flex items-center justify-between bg-gray-50 border border-gray-100 rounded p-2"
+                    className="flex items-center justify-between bg-slate-50 border border-gray-100 rounded p-2"
                   >
-                    <div className="text-sm text-gray-700">
+                    <div className="text-sm text-slate-700">
                       {q.question}{' '}
-                      <span className="text-xs text-gray-500">({q.type})</span>
+                      <span className="text-xs text-slate-500">({q.type})</span>
                     </div>
                     <button
                       type="button"
@@ -938,14 +938,14 @@ export default function CreateJobPage() {
             <button
               type="button"
               onClick={preview}
-              className="px-4 py-2 border rounded"
+              className="px-4 py-2 border rounded text-slate-600 hover:text-slate-900"
             >
               Preview
             </button>
             <button
               type="submit"
               disabled={submitting}
-              className="px-4 py-2 bg-indigo-600 text-white rounded"
+              className="px-4 py-2 bg-gradient-to-r from-[#48adb9] to-[#3a929d] text-white rounded hover:from-[#3a929d] hover:to-[#2c7d84] transition-all duration-300"
             >
               {submitting ? 'Creating…' : 'Create Job'}
             </button>
@@ -961,10 +961,10 @@ export default function CreateJobPage() {
               onClick={(e) => e.stopPropagation()}
             >
               <div className="flex justify-between items-start">
-                <h3 className="text-lg font-medium">Preview</h3>
+                <h3 className="text-lg font-medium text-slate-900">Preview</h3>
                 <button
                   onClick={() => setPreviewHtml(null)}
-                  className="text-gray-500 text-xl"
+                  className="text-slate-500 text-xl hover:text-slate-900"
                 >
                   ×
                 </button>
