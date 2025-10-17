@@ -1,6 +1,9 @@
 "use client";
 import React, { useEffect, useState } from 'react';
-export const dynamic = 'force-dynamic';
+import dynamic from "next/dynamic";
+const RichTextEditor = dynamic(() => import("@/components/ui/RichTextEditor"), {
+  ssr: false,
+});
 function TagsInput({ value = [], onChange, placeholder = 'Add tag' }) {
   const [text, setText] = useState('');
   function add() {
@@ -55,7 +58,6 @@ function TagsInput({ value = [], onChange, placeholder = 'Add tag' }) {
     </div>
   );
 }
-
 export default function CreateJobPage() {
   const [description, setDescription] = useState('');
   const [responsibilities, setResponsibilities] = useState('');
@@ -65,7 +67,6 @@ export default function CreateJobPage() {
   const [qualificationCategories, setQualificationCategories] = useState([]);
   const [qualificationSubcategories, setQualificationSubcategories] = useState([]);
   const [companies, setCompanies] = useState([]);
-
   const [errors, setErrors] = useState({
     industry_id: '',
     category_id: '',
@@ -81,7 +82,7 @@ export default function CreateJobPage() {
     location: '',
     employment_type: 'Full-time',
     experience_min: '',
-    experience_max: '',
+    experience_max: '', 
     salary_min: '',
     salary_max: '',
     hide_salary: false,
@@ -109,9 +110,6 @@ export default function CreateJobPage() {
   const [previewHtml, setPreviewHtml] = useState(null);
   const [submitting, setSubmitting] = useState(false);
   const [userId, setId] = useState(null);
-  console.log("userID",userId)
-
-
   useEffect(() => {
     try {
       if (typeof window === 'undefined') return; 
@@ -136,8 +134,6 @@ export default function CreateJobPage() {
       console.warn('Failed to decode token from localStorage', err);
     }
   }, []);
-
-  
   useEffect(() => {
     if (userId) {
       fetch(`/api/recruiter/${userId}/companies`, {
@@ -152,16 +148,12 @@ export default function CreateJobPage() {
         .catch((error) => console.error('Error fetching companies:', error));
     }
   }, [userId]);
-
-  
   useEffect(() => {
     fetch('/api/industries')
       .then((res) => res.json())
       .then(setIndustries)
       .catch((error) => console.error('Error fetching industries:', error));
   }, []);
-
-
   useEffect(() => {
     if (form.industry_id) {
       fetch(`http://localhost:5000/api/industries/${form.industry_id}/categories`)
@@ -175,8 +167,6 @@ export default function CreateJobPage() {
       setSubcategories([]);
     }
   }, [form.industry_id]);
-
- 
   useEffect(() => {
     if (form.category_id) {
       fetch(
@@ -190,7 +180,6 @@ export default function CreateJobPage() {
       setSubcategories([]);
     }
   }, [form.category_id]);
-
   useEffect(() => {
     fetch(`api/qualifications`)
       .then((res) => res.json())
@@ -203,8 +192,6 @@ export default function CreateJobPage() {
       })
       .catch((error) => console.error('Error fetching qualification categories:', error));
   }, []);
-
-
   useEffect(() => {
     if (form.qualification_category_id) {
       fetch(
@@ -220,13 +207,11 @@ export default function CreateJobPage() {
       setQualificationSubcategories([]);
     }
   }, [form.qualification_category_id]);
-
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
     setForm({ ...form, [name]: type === 'checkbox' ? checked : value });
     setErrors((prev) => ({ ...prev, [name]: '' }));
   };
-
   function addQuestion() {
     const q = questionText.trim();
     if (!q) return;
@@ -237,18 +222,15 @@ export default function CreateJobPage() {
     setQuestionText('');
     setQuestionType('text');
   }
-
   function removeQuestion(idx) {
     setForm((s) => ({
       ...s,
       questions: s.questions.filter((_, i) => i !== idx),
     }));
   }
-
   async function onSubmit(e) {
     e.preventDefault();
     setMsg('');
-
     if (!form.company_id) {
       setMsg('Company required');
       return;
@@ -281,9 +263,7 @@ export default function CreateJobPage() {
       }));
       return;
     }
-
     setSubmitting(true);
-
     const payload = {
       ...form,
       description: form.description || '',
@@ -296,7 +276,6 @@ export default function CreateJobPage() {
       qualification_category_id: form.qualification_category_id || null,
       qualification_subcategory_id: form.qualification_subcategory_id || null,
     };
-
     try {
       const token = typeof window !== 'undefined' ? window.localStorage.getItem('token') : null;
       const base ='http://localhost:5000';
@@ -308,7 +287,6 @@ export default function CreateJobPage() {
         },
         body: JSON.stringify(payload),
       });
-
       const text = await res.text();
       let data = null;
       try {
@@ -316,13 +294,11 @@ export default function CreateJobPage() {
       } catch {
         data = text;
       }
-
       if (!res.ok) {
         setMsg(data?.message || `Server error: ${res.status} ${res.statusText}`);
         setSubmitting(false);
         return;
       }
-
       alert('Job created: ' + (data?.jobId ?? 'OK'));
       window.location.href = '/recruiterDashboard';
     } catch (err) {
@@ -332,7 +308,6 @@ export default function CreateJobPage() {
       setSubmitting(false);
     }
   }
-
   function preview() {
     const combinedHtml = `
       <div>
@@ -345,7 +320,6 @@ export default function CreateJobPage() {
     setPreviewHtml(combinedHtml);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
-
   const CompanySelector = () => {
     if (storedCompany && useStoredCompany) {
       return (
@@ -377,7 +351,6 @@ export default function CreateJobPage() {
         </div>
       );
     }
-
     return (
       <div className="mb-4">
         <label className="block text-sm font-medium text-slate-500">Company</label>
@@ -405,7 +378,6 @@ export default function CreateJobPage() {
       </div>
     );
   };
-
   return (
     <div className="min-h-screen bg-slate-50 py-8 px-4">
       <div className="max-w-5xl mx-auto">
@@ -413,7 +385,6 @@ export default function CreateJobPage() {
         <p className="text-sm text-slate-500 mb-6">
           Create a job listing. Enter the job description below.
         </p>
-
         <form className="bg-white shadow rounded p-6" onSubmit={onSubmit}>
           <CompanySelector />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -730,30 +701,18 @@ export default function CreateJobPage() {
               </div>
             </div>
             <div className="md:col-span-3">
-              <label className="block text-sm font-medium text-slate-500">
+              <label className="block text-sm font-medium text-slate-500 mb-2">
                 Job Description
               </label>
-              <textarea
-                value={description}
-                onChange={(e) => setDescription(e.target.value)}
-                placeholder="Enter job description here..."
-                className="mt-1 w-full rounded border border-gray-200 p-2 focus:ring-2 focus:ring-[#48adb9]/10"
-                rows={6}
-                required
-              />
+             <RichTextEditor content={form.description} onChange={(html) => setForm({ ...form, description: html })} title=" Start typing your job description..." />
             </div>
             <div className="md:col-span-3">
-              <label className="block text-sm font-medium text-slate-500">
+              <label className="block text-sm font-medium text-slate-500  mb-2">
                 Responsibilities
               </label>
-              <textarea
-                value={responsibilities}
-                onChange={(e) => setResponsibilities(e.target.value)}
-                placeholder="Enter responsibilities here..."
-                className="mt-1 w-full rounded border border-gray-200 p-2 focus:ring-2 focus:ring-[#48adb9]/10"
-                rows={4}
-                required
-              />
+             <RichTextEditor content={form.responsibilities} onChange={(html) => setForm({ ...form, responsibilities: html })} title=" Start typing your job responsibilities..." />
+
+            
             </div>
             <div className="md:col-span-3">
               <label className="block text-sm font-medium text-slate-500">

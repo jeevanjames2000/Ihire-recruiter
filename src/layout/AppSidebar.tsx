@@ -6,27 +6,17 @@ import { usePathname } from "next/navigation";
 import { useSidebar } from "../context/SidebarContext";
 import theme from "../../theme.json";
 import {
-  BoxCubeIcon,
-  CalenderIcon,
   ChevronDownIcon,
-  GridIcon,
-  HorizontaLDots,
-  ListIcon,
-  PageIcon,
-  PieChartIcon,
-  PlugInIcon,
-  TableIcon,
-  UserCircleIcon,
+  GridIcon, ListIcon,
+  PageIcon, TableIcon,
+  UserCircleIcon
 } from "../icons/index";
-import SidebarWidget from "./SidebarWidget";
-
 type NavItem = {
   name: string;
   icon: React.ReactNode;
   path?: string;
   subItems?: { name: string; path: string; pro?: boolean; new?: boolean }[];
 };
-
 const navItems: NavItem[] = [
   { icon: <GridIcon />, name: "Dashboard", path: "/recruiterDashboard" },
   { icon: <ListIcon />, name: "Job Listings", path: "/joblisting" },
@@ -34,12 +24,9 @@ const navItems: NavItem[] = [
   { icon: <UserCircleIcon />, name: "Applicants", path: "/applicants" },
   { icon: <PageIcon />, name: "Company Profile", path: "/profile" },
 ];
-
 const AppSidebar: React.FC = () => {
   const { isExpanded, isMobileOpen, isHovered, setIsHovered } = useSidebar();
   const pathname = usePathname();
-
-  // destructure theme values
   const { buttons, logo, text, background } = theme;
   const primaryGradient = `${buttons.primary.bg} ${buttons.primary.to}`;
   const primaryHover = `${buttons.primary.bgHover} ${buttons.primary.toHover}`;
@@ -48,16 +35,13 @@ const AppSidebar: React.FC = () => {
   const primaryTextColor = text.primary;
   const primaryBg = background.primary;
   const secondaryBg = background.secondary;
-
   const [openSubmenu, setOpenSubmenu] = useState<{
     type: "main" | "others";
     index: number;
   } | null>(null);
   const [subMenuHeight, setSubMenuHeight] = useState<Record<string, number>>({});
   const subMenuRefs = useRef<Record<string, HTMLDivElement | null>>({});
-
   const isActive = useCallback((path: string) => path === pathname, [pathname]);
-
   useEffect(() => {
     let submenuMatched = false;
     ["main", "others"].forEach((menuType) => {
@@ -78,7 +62,6 @@ const AppSidebar: React.FC = () => {
     });
     if (!submenuMatched) setOpenSubmenu(null);
   }, [pathname, isActive]);
-
   useEffect(() => {
     if (openSubmenu !== null) {
       const key = `${openSubmenu.type}-${openSubmenu.index}`;
@@ -90,7 +73,6 @@ const AppSidebar: React.FC = () => {
       }
     }
   }, [openSubmenu]);
-
   const handleSubmenuToggle = (index: number, menuType: "main" | "others") => {
     setOpenSubmenu((prev) =>
       prev?.type === menuType && prev?.index === index
@@ -98,7 +80,6 @@ const AppSidebar: React.FC = () => {
         : { type: menuType, index }
     );
   };
-
   const renderMenuItems = (items: NavItem[], menuType: "main" | "others") => (
     <ul className="flex flex-col gap-2">
       {items.map((nav, index) => (
@@ -155,7 +136,6 @@ const AppSidebar: React.FC = () => {
       ))}
     </ul>
   );
-
   return (
     <aside
       className={`fixed top-0 left-0 h-screen flex flex-col border-r shadow-lg transition-all duration-300 z-50 
@@ -169,7 +149,7 @@ const AppSidebar: React.FC = () => {
       onMouseEnter={() => !isExpanded && setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      {/* === LOGO SECTION === */}
+      {}
       <div
         className={`p-6 bg-gradient-to-r ${primaryGradient} text-white shadow-md flex items-center ${
           !isExpanded && !isHovered ? "justify-center" : "justify-start"
@@ -191,25 +171,18 @@ const AppSidebar: React.FC = () => {
           )}
         </Link>
       </div>
-
-      {/* === NAVIGATION === */}
+      {}
       <div
         className={`flex-1 overflow-y-auto p-5 ${secondaryBg} no-scrollbar`}
       >
         <h2
           className={`text-xs uppercase tracking-widest mb-3 font-semibold ${secondaryText}`}
         >
-          {isExpanded || isHovered || isMobileOpen ? "Main Menu" : ""}
         </h2>
         {renderMenuItems(navItems, "main")}
       </div>
-{/* 
-      === FOOTER / WIDGET === */}
-      {/* <div className={`p-4 border-t ${secondaryBg}`}>
-        <SidebarWidget />
-      </div> */}
+
     </aside>
   );
 };
-
 export default AppSidebar;

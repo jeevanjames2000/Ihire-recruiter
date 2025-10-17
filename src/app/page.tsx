@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
-import { checkUserSession } from "@/lib/auth";
 
 export default function HomePage() {
   const router = useRouter();
@@ -10,13 +9,10 @@ export default function HomePage() {
 
   useEffect(() => {
     const verifyUser = async () => {
-      const loggedIn = await checkUserSession();
-
-      if (loggedIn) {
+   
+      
         router.push("/recruiterDashboard");
-      } else {
-        router.push("/login");
-      }
+     
     };
 
     verifyUser().finally(() => setLoading(false));
